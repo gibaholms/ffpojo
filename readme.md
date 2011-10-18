@@ -103,7 +103,7 @@ If you choose to map your ffpojos using XML, it must be valid according to the [
 ##### 1 - Simple Positional Record Parsing Example <a id="example-1"/> #####
 
 ```java
-package org.ffpojo.example;
+// package and imports omitted
 
 public class SimplePositionalRecordParsingExample {
 
@@ -226,21 +226,7 @@ public class SimplePositionalRecordParsingExample {
 ##### 2 - Simple Delimited Record Parsing Example <a id="example-2"/> #####
 
 ```java
-package org.ffpojo.example;
-
-import java.io.BufferedReader;
-import java.io.BufferedWriter;
-import java.io.File;
-import java.io.FileWriter;
-import java.io.IOException;
-import java.io.InputStreamReader;
-import java.util.ArrayList;
-import java.util.List;
-
-import org.ffpojo.FFPojoHelper;
-import org.ffpojo.exception.FFPojoException;
-import org.ffpojo.metadata.delimited.annotation.DelimitedField;
-import org.ffpojo.metadata.delimited.annotation.DelimitedRecord;
+// package and imports omitted
 
 public class SimpleDelimitedRecordParsingExample {
 
@@ -363,27 +349,7 @@ public class SimpleDelimitedRecordParsingExample {
 ##### 3 - Positional Record Parsing With Decorator Example <a id="example-3"/> #####
 
 ```java
-package org.ffpojo.example;
-
-import java.io.BufferedReader;
-import java.io.BufferedWriter;
-import java.io.File;
-import java.io.FileWriter;
-import java.io.IOException;
-import java.io.InputStreamReader;
-import java.text.ParseException;
-import java.text.SimpleDateFormat;
-import java.util.ArrayList;
-import java.util.Date;
-import java.util.List;
-
-import org.ffpojo.FFPojoHelper;
-import org.ffpojo.exception.FFPojoException;
-import org.ffpojo.exception.FieldDecoratorException;
-import org.ffpojo.metadata.DefaultFieldDecorator;
-import org.ffpojo.metadata.FieldDecorator;
-import org.ffpojo.metadata.positional.annotation.PositionalField;
-import org.ffpojo.metadata.positional.annotation.PositionalRecord;
+// package and imports omitted
 
 public class PositionalRecordParsingWithDecoratorExample {
 
@@ -538,17 +504,7 @@ public class PositionalRecordParsingWithDecoratorExample {
 ##### 4 - Simple File System Flat File Reader Example <a id="example-4"/> #####
 
 ```java
-package org.ffpojo.example;
-
-import java.io.File;
-import java.io.IOException;
-
-import org.ffpojo.exception.FFPojoException;
-import org.ffpojo.file.reader.FileSystemFlatFileReader;
-import org.ffpojo.file.reader.FlatFileReader;
-import org.ffpojo.file.reader.FlatFileReaderDefinition;
-import org.ffpojo.metadata.positional.annotation.PositionalField;
-import org.ffpojo.metadata.positional.annotation.PositionalRecord;
+// package and imports omitted
 
 public class SimpleFileSystemFlatFileReaderExample {
 
@@ -627,17 +583,7 @@ public class SimpleFileSystemFlatFileReaderExample {
 ##### 5 - Simple Input Stream Flat File Reader Example <a id="example-5"/> #####
 
 ```java
-package org.ffpojo.example;
-
-import java.io.IOException;
-import java.io.InputStream;
-
-import org.ffpojo.exception.FFPojoException;
-import org.ffpojo.file.reader.FlatFileReader;
-import org.ffpojo.file.reader.FlatFileReaderDefinition;
-import org.ffpojo.file.reader.InputStreamFlatFileReader;
-import org.ffpojo.metadata.positional.annotation.PositionalField;
-import org.ffpojo.metadata.positional.annotation.PositionalRecord;
+// package and imports omitted
 
 public class SimpleInputStreamFlatFileReaderExample {
 
@@ -712,23 +658,7 @@ public class SimpleInputStreamFlatFileReaderExample {
 ##### 6 - File System Flat File Reader With Header And Trailer Example <a id="example-6"/> #####
 
 ```java
-package org.ffpojo.example;
-
-import java.io.File;
-import java.io.IOException;
-import java.text.ParseException;
-import java.text.SimpleDateFormat;
-import java.util.Date;
-
-import org.ffpojo.exception.FFPojoException;
-import org.ffpojo.exception.FieldDecoratorException;
-import org.ffpojo.file.reader.FileSystemFlatFileReader;
-import org.ffpojo.file.reader.FlatFileReader;
-import org.ffpojo.file.reader.FlatFileReaderDefinition;
-import org.ffpojo.file.reader.RecordType;
-import org.ffpojo.metadata.FieldDecorator;
-import org.ffpojo.metadata.positional.annotation.PositionalField;
-import org.ffpojo.metadata.positional.annotation.PositionalRecord;
+// package and imports omitted
 
 public class FileSystemFlatFileReaderWithHeaderAndTrailerExample {
 
@@ -882,21 +812,7 @@ public class FileSystemFlatFileReaderWithHeaderAndTrailerExample {
 ##### 7 - Simple File System Flat File Reader With Default Flat File Processor Example <a id="example-7"/> #####
 
 ```java
-package org.ffpojo.example;
-
-import java.io.File;
-import java.io.IOException;
-
-import org.ffpojo.exception.FFPojoException;
-import org.ffpojo.file.processor.DefaultFlatFileProcessor;
-import org.ffpojo.file.processor.FlatFileProcessor;
-import org.ffpojo.file.processor.record.RecordProcessor;
-import org.ffpojo.file.processor.record.event.RecordEvent;
-import org.ffpojo.file.reader.FileSystemFlatFileReader;
-import org.ffpojo.file.reader.FlatFileReader;
-import org.ffpojo.file.reader.FlatFileReaderDefinition;
-import org.ffpojo.metadata.positional.annotation.PositionalField;
-import org.ffpojo.metadata.positional.annotation.PositionalRecord;
+// package and imports omitted
 
 public class SimpleFileSystemFlatFileReaderWithDefaultFlatFileProcessorExample {
 
@@ -990,21 +906,7 @@ public class SimpleFileSystemFlatFileReaderWithDefaultFlatFileProcessorExample {
 ##### 8 - Simple File System Flat File Reader With Thread Pool Flat File Processor Example <a id="example-8"/> #####
 
 ```java
-package org.ffpojo.example;
-
-import java.io.File;
-import java.io.IOException;
-
-import org.ffpojo.exception.FFPojoException;
-import org.ffpojo.file.processor.FlatFileProcessor;
-import org.ffpojo.file.processor.ThreadPoolFlatFileProcessor;
-import org.ffpojo.file.processor.record.RecordProcessor;
-import org.ffpojo.file.processor.record.event.RecordEvent;
-import org.ffpojo.file.reader.FileSystemFlatFileReader;
-import org.ffpojo.file.reader.FlatFileReader;
-import org.ffpojo.file.reader.FlatFileReaderDefinition;
-import org.ffpojo.metadata.positional.annotation.PositionalField;
-import org.ffpojo.metadata.positional.annotation.PositionalRecord;
+// package and imports omitted
 
 public class SimpleFileSystemFlatFileReaderWithThreadPoolFlatFileProcessorExample {
 
@@ -1099,23 +1001,7 @@ public class SimpleFileSystemFlatFileReaderWithThreadPoolFlatFileProcessorExampl
 ##### 9 - Simple File System Flat File Reader With Thread Pool Flat File Processor And Error Handler Example <a id="example-9"/> #####
 
 ```java
-package org.ffpojo.example;
-
-import java.io.File;
-import java.io.IOException;
-
-import org.ffpojo.exception.FFPojoException;
-import org.ffpojo.exception.RecordProcessorException;
-import org.ffpojo.file.processor.FlatFileProcessor;
-import org.ffpojo.file.processor.ThreadPoolFlatFileProcessor;
-import org.ffpojo.file.processor.record.DefaultRecordProcessor;
-import org.ffpojo.file.processor.record.event.RecordEvent;
-import org.ffpojo.file.processor.record.handler.ErrorHandler;
-import org.ffpojo.file.reader.FileSystemFlatFileReader;
-import org.ffpojo.file.reader.FlatFileReader;
-import org.ffpojo.file.reader.FlatFileReaderDefinition;
-import org.ffpojo.metadata.positional.annotation.PositionalField;
-import org.ffpojo.metadata.positional.annotation.PositionalRecord;
+// package and imports omitted
 
 public class SimpleFileSystemFlatFileReaderWithThreadPoolFlatFileProcessorAndErrorHandlerExample {
 
@@ -1212,18 +1098,7 @@ public class SimpleFileSystemFlatFileReaderWithThreadPoolFlatFileProcessorAndErr
 ##### 10 - Simple File System Flat File Writer Example <a id="example-10"/> #####
 
 ```java
-package org.ffpojo.example;
-
-import java.io.File;
-import java.io.IOException;
-import java.util.ArrayList;
-import java.util.List;
-
-import org.ffpojo.exception.FFPojoException;
-import org.ffpojo.file.writer.FileSystemFlatFileWriter;
-import org.ffpojo.file.writer.FlatFileWriter;
-import org.ffpojo.metadata.positional.annotation.PositionalField;
-import org.ffpojo.metadata.positional.annotation.PositionalRecord;
+// package and imports omitted
 
 public class SimpleFileSystemFlatFileWriterExample {
 
